@@ -1,9 +1,13 @@
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+//Hier importiert man seine Komponenten
+import Navbar from "./components/Navbar"
 
+//Ist die Main Methode
 function App() {
   return (
-    <h2>Portfolio Project..</h2>
+    //Navbar wird aufgerufen
+    <Navbar />
   );
 }
 
