@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+//Partikeln importieren
 import Particles from "react-particles-js";
 //Hier importiert man seine Komponenten
 import Navbar from "./components/Navbar";
@@ -16,10 +17,10 @@ function App() {
       params={{
         particles: {
           number: {
-            value: 30,
+            value: 35,
             density: {
               enable: true,
-              value_area: 900
+              value_area: 800
             }
           },
           shape: {

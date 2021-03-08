@@ -1,4 +1,5 @@
 import React from 'react';
+//Dies ist ein Modul import von React
 import Typed from "react-typed";
 
 

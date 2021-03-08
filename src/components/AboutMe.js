@@ -8,6 +8,7 @@ const AboutMe = () => {
                 <div className="col-lg-6 col-xm-12">
                     {/*mb-5 Bootstrap margin bottom 5px;*/}
                     <div className="photo-wrap mb-5">
+                        {/*Foto link*/}
                         <img className="profile-img" src={MePhoto} alt="Foto..." />
                     </div>
                 </div>

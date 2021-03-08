@@ -13,20 +13,22 @@ body{
   font-family: 'Poppins', sans-serif !important;
 }
 
-/***************** Navbar ******************/
+/**************************************** Navbar ****************************************/
 nav {
+  /*z-index Hintergrund*/
   z-index: 2;
 }
 
 .Logo {
-  width: 3.25rem;
+  width: 3.5rem;
 }
 
-/***************** Menü Links ******************/
+/**************************************** Menü Links ****************************************/
 nav a.nav-link {
   font-weight: 500;
   letter-spacing: 2px;
-  cursor: pointer
+  /*Mit cursor: können Sie das Aussehen des Mauszeigers für den Fall definieren*/
+  cursor: pointer;
 }
 
 nav ul li{
@@ -47,12 +49,13 @@ nav ul li{
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
+/*Die ganze Navbarleiste*/
 .navbar-brand {
-  max-width: 17.25rem;
+  max-width: 15.25rem;
   padding: 0 !important;
 }
 
-/******************Für Handy**************/
+/******************Für Handy********************/
 @media(max-width: 768px) {
   .navbar-brand {
     width: 7rem;
@@ -71,9 +74,14 @@ nav ul li{
 }
 
 
-/**********************HEADER**********************/
+/**************************************** Header ****************************************/
 
 .header-wraper{
+  /*
+  - Mit position:relative kann man das Element mit top, bottom, left und right ausrichten. Die Lücke im Textfluss bleibt bestehen.
+  - background-size bestimmt, an welcher Stelle sich die linken oberen Ecken der Hintergrundbilder befinden sollen.cover: passt unter Beibehaltung des Seitenverhältnisses die kleinere Seite der Grafik in den Anzeigebereich ein
+  - background-position bestimmt, an welcher Stelle sich eine bestimmte Ecke des Hintergrundbildes befinden soll
+  */
   position: relative;
   background: url(/src/img/Background.jpg) no-repeat;
   background-size: cover;
@@ -81,6 +89,12 @@ nav ul li{
   height: 90vh;
 }
 
+/*
+- display wird festgelegt, welche Art von Box ein Element erzeugt. generiert einen Flex-Container, der sich wie ein Blockelement verhält
+- justify-content definiert, wie der Platz zwischen Inhaltselementen entlang der Hauptachse eines Flex-Containers bzw. entlang der inline-Achse eines Grid-Containers verteilt wird
+- align-items legt fest, wie die einzelnen flexiblen Elemente entlang der Querachse angeordnet werden. center Alle Elemente werden mittig angeordne
+- z-index gibt an, in welcher Reihenfolge Elemente auf dem Ausgabemedium dargestellt werden.
+*/
 .main-info{
   display: flex;
   position: absolute;
@@ -93,7 +107,6 @@ nav ul li{
   align-items: center;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  /*Vordergrund*/
   z-index: 1;
 }
 
@@ -101,14 +114,6 @@ nav ul li{
   color: var(--primary-orange);
   text-transform: uppercase;
 }
-
-/******************Für Handy**************/
-@media(max-width: 768px) {
-  .main-info h1{
-    font-size: 1.7rem !important;
-  }
-}
-
 
 /******************Typed Text****************/
 
@@ -119,12 +124,20 @@ nav ul li{
 
 /******************Für Handy**************/
 @media(max-width: 768px) {
+  .main-info h1{
+    font-size: 1.6rem !important;
+  }
+  .header-wraper{
+    background-position: -390px;
+  }
   .typed-text{
     font-size: 1.3rem !important;
   }
+  /* Für die particles ausblenden
+  .particles-canvas {
+    display: none;
+  }*/
 }
-
-
 
 /************** Header Main Offer **************/
 .btn-main-offer {
@@ -136,14 +149,15 @@ nav ul li{
   margin: 2rem;
 }
 
+/*Button Schatten*/
 .btn-main-offer:hover {
   text-decoration: none;
   background-color: var(--primary-hover-red);
   color: var(--primary-white);
-  transition:  .2s ease-in-out;
+  transition:  .3s ease-in-out;
 }
 
-/*************** Particles JS ******************************/
+/*************** Particles JS ******************/
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
@@ -151,17 +165,9 @@ nav ul li{
   z-index: 1;
 }
 
-/******************Für Handy**************/
-@media(max-width: 768px) {
-  /* Für die particles ausblenden
-  .particles-canvas {
-    display: none;
-  }*/
-}
 
+/**************************************** About Me ****************************************/
 
-
-/****************************ABOUT me************************************/
 .photo-wrap {
   display: flex;
   justify-content: center;
