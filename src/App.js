@@ -4,12 +4,13 @@ import Particles from "react-particles-js";
 //Hier importiert man seine Komponenten
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
 
 //Ist die Main Methode
 function App() {
   return (
     <>
-      {/*Parrticles bzw. die Umgebung wird aufgerufen*/}
+      {/*Parrticles bzw. die Umgebung wird aufgerufen. Man kann hier gewisse einstellungen vornehmen. Siehe Internet*/}
       <Particles 
       className="particles-canvas"
       params={{
@@ -34,6 +35,7 @@ function App() {
       {/*Navbar wird aufgerufen*/}
       <Navbar />
       <Header />
+      <AboutMe />
     </>
   );
 }
