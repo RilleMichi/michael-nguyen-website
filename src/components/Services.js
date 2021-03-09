@@ -1,6 +1,4 @@
 import React from 'react';
-//Wird nicht gebraucht, aber für Markenbilder
-import { faWindows } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faLaptopMedical, faNetworkWired, faUsers } from '@fortawesome/free-solid-svg-icons';
 

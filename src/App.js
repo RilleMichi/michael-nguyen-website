@@ -7,7 +7,8 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
-import Experiences from "./components/Experiences"
+import Experiences from "./components/Experiences";
+import Skills from './components/Skills';
 
 //Ist die Main Methode
 function App() {
@@ -41,6 +42,7 @@ function App() {
       <AboutMe />
       <Services />
       <Experiences />
+      <Skills />
     </>
   );
 }
