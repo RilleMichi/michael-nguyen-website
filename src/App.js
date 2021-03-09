@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
+import Experiences from "./components/Experiences"
 
 //Ist die Main Methode
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <Header />
       <AboutMe />
       <Services />
+      <Experiences />
     </>
   );
 }
