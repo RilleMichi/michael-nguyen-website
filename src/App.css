@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
 :root {
-  --primary-white: #fff;
+  --primary-white: #ffffff;
+  --primmary-light-grey: #f4f4f4;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba(255,255,255,0);
+  --primary-dark: rgb(52, 58, 64);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
 }
 
-body{
+body {
   /* Standardschrift*/
   font-family: 'Poppins', sans-serif !important;
 }
 
 /**************************************** Navbar ****************************************/
+
 nav {
   /*z-index Hintergrund*/
   z-index: 2;
@@ -24,6 +25,7 @@ nav {
 }
 
 /**************************************** Menü Links ****************************************/
+
 nav a.nav-link {
   font-weight: 500;
   letter-spacing: 2px;
@@ -31,7 +33,7 @@ nav a.nav-link {
   cursor: pointer;
 }
 
-nav ul li{
+nav ul li {
   text-transform: uppercase;
 }
 
@@ -40,7 +42,8 @@ nav ul li{
   <li>
     <a>
     */
-.navbar-nav > li > a{
+
+.navbar-nav>li>a {
   /* zum überschreiben*/
   margin-right: 12px;
   margin-left: 12px;
@@ -50,33 +53,35 @@ nav ul li{
 }
 
 /*Die ganze Navbarleiste*/
+
 .navbar-brand {
   max-width: 15.25rem;
   padding: 0 !important;
 }
 
 /******************Für Handy********************/
+
 @media(max-width: 768px) {
   .navbar-brand {
     width: 7rem;
   }
 }
 
-
 /* leuchten oberhalb der NAvigation; a.active --> wenn man daruf klickt*/
-.navbar-nav > li > a.active,  .navbar-nav > li > a.active:focus {
+
+.navbar-nav>li>a.active, .navbar-nav>li>a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
 /* leuchten oberhalb der NAvigation; a.active --> wenn man darüber fährt*/
-.navbar-nav > li > a:hover {
+
+.navbar-nav>li>a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
-
 /**************************************** Header ****************************************/
 
-.header-wraper{
+.header-wraper {
   /*
   - Mit position:relative kann man das Element mit top, bottom, left und right ausrichten. Die Lücke im Textfluss bleibt bestehen.
   - background-size bestimmt, an welcher Stelle sich die linken oberen Ecken der Hintergrundbilder befinden sollen.cover: passt unter Beibehaltung des Seitenverhältnisses die kleinere Seite der Grafik in den Anzeigebereich ein
@@ -95,7 +100,8 @@ nav ul li{
 - align-items legt fest, wie die einzelnen flexiblen Elemente entlang der Querachse angeordnet werden. center Alle Elemente werden mittig angeordne
 - z-index gibt an, in welcher Reihenfolge Elemente auf dem Ausgabemedium dargestellt werden.
 */
-.main-info{
+
+.main-info {
   display: flex;
   position: absolute;
   top: 0;
@@ -123,14 +129,15 @@ nav ul li{
 }
 
 /******************Für Handy**************/
+
 @media(max-width: 768px) {
-  .main-info h1{
+  .main-info h1 {
     font-size: 1.6rem !important;
   }
-  .header-wraper{
+  .header-wraper {
     background-position: -390px;
   }
-  .typed-text{
+  .typed-text {
     font-size: 1.3rem !important;
   }
   /* Für die particles ausblenden
@@ -140,6 +147,7 @@ nav ul li{
 }
 
 /************** Header Main Offer **************/
+
 .btn-main-offer {
   border: 1px solid var(--primary-red);
   text-transform: uppercase;
@@ -150,21 +158,22 @@ nav ul li{
 }
 
 /*Button Schatten*/
+
 .btn-main-offer:hover {
   text-decoration: none;
   background-color: var(--primary-hover-red);
   color: var(--primary-white);
-  transition:  .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 /*************** Particles JS ******************/
+
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
   width: 100vh;
   z-index: 1;
 }
-
 
 /**************************************** About Me ****************************************/
 
@@ -190,4 +199,62 @@ nav ul li{
   .profile-img {
     width: 10rem;
   }
+}
+
+/**************************************** Services ****************************************/
+
+.services {
+  text-align: center;
+  padding-bottom: 2rem;
+  background: var(--primmary-light-grey);
+}
+
+.services h1 {
+  color: var(--primary-dark);
+  text-transform: uppercase;
+}
+
+.services h3 {
+  color: var(--primary-dark);
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.services .circle {
+  position: relative;
+  margin: 0.375rem auto;
+  background: var(--primary-orange);
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.services .icon {
+  font-size: 1.4rem;
+  color: var(--primary-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services .box {
+  height: 18rem;
+  border-bottom: 0.3125rem solid var(--primary-orange);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background: var(--primary-white);
+}
+
+.services .box:hover {
+  background: var(--primary-orange);
+  border-bottom: 0.3125rem solid var(--primary-dark);
+}
+
+.services .box:hover .icon {
+  color: var(--primary-dark);
+}
+
+.services .box:hover .circle {
+  background: var(--primary-white);
 }
