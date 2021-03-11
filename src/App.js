@@ -1,7 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //Partikeln importieren
-import Particles from "react-particles-js";
+
+import Particles from 'react-particles-js';
 //Hier importiert man seine Komponenten
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -9,6 +10,7 @@ import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import Experiences from "./components/Experiences";
 import Skills from './components/Skills';
+import Blog from './components/Blog';
 
 //Ist die Main Methode
 function App() {
@@ -43,6 +45,7 @@ function App() {
       <Services />
       <Experiences />
       <Skills />
+      <Blog />
     </>
   );
 }
