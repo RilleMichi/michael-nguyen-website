@@ -28,17 +28,15 @@ const Blog = () => {
             </>
         )
         PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Perth",
+                },
+            },
+        });
     }
-    // Wird unten aufgerufen um die popupbox zu zeigen, damit kan man die Einstellungen für den Popup vornehmen
-    const popupBoxConfigPerth = {
-        titleBar: {
-            enable: true,
-            text: "Perth"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
-
 
     // Hawaii
     const openPopupboxHawaii = () => {
@@ -53,16 +51,16 @@ const Blog = () => {
             </>
         )
         PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Hawaii",
+                },
+            },
+        });
     }
-    // Wird unten aufgerufen um die popupbox zu zeigen, damit kan man die Einstellungen für den Popup vornehmen
-    const popupBoxConfigHawaii = {
-        titleBar: {
-            enable: true,
-            text: "Hawaii"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
+ 
 
     // Niederhorn
     const openPopupboxNiederhorn = () => {
@@ -77,15 +75,14 @@ const Blog = () => {
             </>
         )
         PopupboxManager.open({ content });
-    }
-    // Wird unten aufgerufen um die popupbox zu zeigen, damit kan man die Einstellungen für den Popup vornehmen
-    const popupBoxConfigNiederhorn = {
-        titleBar: {
-            enable: true,
-            text: "Niederhorn"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Niederhorn",
+                },
+            },
+        });
     }
 
     //Bali
@@ -101,13 +98,17 @@ const Blog = () => {
             </>
         )
         PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Bali",
+                },
+            },
+        });
     }
     // Wird unten aufgerufen um die popupbox zu zeigen, damit kan man die Einstellungen für den Popup vornehmen
-    const popupBoxConfigBali = {
-        titleBar: {
-            enable: true,
-            text: "Bali"
-        },
+    const popupBoxConfig = {
         fadeIn: true,
         fadeInSpeed: 500
     }
@@ -143,11 +144,8 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            {/*Aufruf der PopupboxConfigs*/}
-            <PopupboxContainer {...popupBoxConfigPerth} />
-            <PopupboxContainer {...popupBoxConfigHawaii} />
-            <PopupboxContainer {...popupBoxConfigNiederhorn} />
-            <PopupboxContainer {...popupBoxConfigBali} />
+            {/*Aufruf Aller PopupboxConfigs*/}
+            <PopupboxContainer {...popupBoxConfig} />
         </div>
     )
 }

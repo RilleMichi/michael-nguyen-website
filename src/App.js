@@ -12,6 +12,7 @@ import Experiences from "./components/Experiences";
 import Skills from './components/Abilities';
 import Blog from './components/Blog';
 import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
 
 //Ist die Main Methode
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <Skills />
       <Blog />
       <Testimonials />
+      <Contact />
     </>
   );
 }
