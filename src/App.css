@@ -17,6 +17,11 @@ body {
   font-family: 'Poppins', sans-serif !important;
 }
 
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
 /**************************************** Navbar ****************************************/
 
 nav {
@@ -434,6 +439,115 @@ nav ul li {
   background: var(--primary-white);
 }
 
+
+/**************************************** Skills2 ****************************************/
+
+.vertical-line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-top: 2rem;
+}
+
+.abilities{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: var(--primmary-light-grey);
+}
+
+.abilities h3 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--primary-orange);
+}
+
+.abilities-box h4 {
+  font-size: 1.5rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.abilities .no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.abilities-line {
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.abilities-line:hover {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.abilities ul > li .ability-title-icon {  
+ margin-right: 10px;
+
+ width: 30px;
+}
+
+.abilities ul > li .ability-title {  
+  font-weight: 600;
+}
+
+.abilities ul > li .ability-score {
+    float: right;
+    color: var(--primary-orange);
+}
+
+.abilities-box .abilities-ilt{
+  width: 100%;
+  position: relative;
+  height: 0.4rem;
+  background-color: #ccc;
+  border-radius: 0.5rem;
+}
+
+.abilities-box .abilities-bar {
+  background-color: var(--primary-orange);
+  height: 0.4rem;
+}
+
+.abilities-box .html {
+  width: 95%;
+}
+
+.abilities-box .css {
+  width: 80%;
+}
+
+.abilities-box .javascript {
+  width: 50%;
+}
+
+.abilities-box .java {
+  width: 95%;
+}
+
+.abilities-box span {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  font-size: 1.4rem;
+}
+/*
+.abilities.box:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.abilities-center{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}*/
 /**************************************** Portfolio ****************************************/
 
 /* Gange Block*/
@@ -546,7 +660,7 @@ nav ul li {
 
 /**************************************** Testimonials ****************************************/
 .testimonials {
-  background-image: url(/src/img/BackgroundFreetime.jpg);
+  background-image: url(/src/img/blatt.jpg);
   background-size: cover;
   background-color: var(--primary-black);
   text-align: center;
@@ -561,9 +675,10 @@ width: 100%
   text-transform: uppercase;
 }
 
+/*Schwarzer Block im Carousel*/
 .testimonials-content {
   text-align: center;
-  max-width: 53.125rem;
+  max-width: 45.125rem;
   margin: 0 auto 2rem auto;
   background: var(--primary-transparent-black);
 }
@@ -586,6 +701,7 @@ width: 100%
   color: var(--primary-orange);
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 .myCarousel p {
@@ -593,7 +709,10 @@ width: 100%
 }
 
 .carousel .slide img {
-  width: 30rem !important;
+  /*width: 30rem !important;*/
+  width: 500px !important;
+  height: 300px;
+  object-fit: cover;
   border-radius: 5%;
 }
 
@@ -607,3 +726,26 @@ width: 100%
   margin: auto !important;
   margin-top: 3% !important;
 }
+
+
+@media(max-width: 600px) {
+  .carousel .slide img {
+    width: 300px !important;
+    height: 200px;
+  }
+}
+
+@media(max-width: 400px) {
+  .carousel .slide img {
+    width: 230px !important;
+    height: 150px;
+  }
+}
+
+@media(max-width: 280px) {
+  .carousel .slide img {
+    width: 200px !important;
+    height: 100px;
+  }
+}
+

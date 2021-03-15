@@ -9,7 +9,7 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import Experiences from "./components/Experiences";
-import Skills from './components/Skills';
+import Skills from './components/Abilities';
 import Blog from './components/Blog';
 import Testimonials from './components/Testimonials';
 
