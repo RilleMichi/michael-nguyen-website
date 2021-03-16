@@ -31,14 +31,14 @@ nav {
 }
 
 .Logo {
-  width: 3.5rem;
+  width: 2.7rem;
 }
 
 /**************************************** Menü Links ****************************************/
 
 nav a.nav-link {
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   /*Mit cursor: können Sie das Aussehen des Mauszeigers für den Fall definieren*/
   cursor: pointer;
 }
@@ -55,26 +55,18 @@ nav ul li {
 
 .navbar-nav>li>a {
   /* zum überschreiben*/
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 8px;
+  margin-left: 8px;
   color: var(--primary-white) !important;
   /* leuchten oberhalb der NAvigatio standard*/
   border-top: 0.1875rem solid var(--primary-dark);
+  text-align: center;
 }
 
 /*Die ganze Navbarleiste*/
-
 .navbar-brand {
   max-width: 15.25rem;
   padding: 0 !important;
-}
-
-/******************Für Handy********************/
-
-@media(max-width: 768px) {
-  .navbar-brand {
-    width: 7rem;
-  }
 }
 
 /* leuchten oberhalb der NAvigation; a.active --> wenn man daruf klickt*/
@@ -89,6 +81,33 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
+
+/******************Für Handy********************/
+
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+
+  nav ul {
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav>li>a.active, .navbar-nav>li>a.active:focus {
+    border-top:none;
+  }
+  
+  /* leuchten oberhalb der NAvigation; a.active --> wenn man darüber fährt*/
+  
+  .navbar-nav>li>a:hover {
+    border-top:none;
+    background-color: var(--primary-orange) !important;
+    color: var(--primary-black) !important;
+  }
+  
+
+}
+
 /**************************************** Header ****************************************/
 
 .header-wraper {
@@ -101,7 +120,7 @@ nav ul li {
   background: url(/src/img/Background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 /*
@@ -188,6 +207,7 @@ nav ul li {
 /**************************************** About Me ****************************************/
 
 .photo-wrap {
+  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,6 +228,10 @@ nav ul li {
 @media(max-width: 468px) {
   .profile-img {
     width: 10rem;
+  }
+
+  .photo-wrap {
+    margin-top: 0rem;
   }
 }
 
@@ -556,7 +580,7 @@ nav ul li {
 
 .blog-wrapper {
   /*background: var(--primary-dark-grey);*/
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .blog-wrapper h1 {
@@ -610,6 +634,10 @@ nav ul li {
   opacity: 70%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.popupbox-wrapper {
+  margin-top: 7rem;
 }
 
 /*********** Overflow box PopupBox ********/
@@ -851,4 +879,26 @@ textarea.form-control {
   .contact p {
     padding: 0 0.4rem;
   }
+}
+
+/**************************************** Footer ****************************************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }

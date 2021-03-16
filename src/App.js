@@ -13,6 +13,7 @@ import Skills from './components/Abilities';
 import Blog from './components/Blog';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 //Ist die Main Methode
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <Blog />
       <Testimonials />
       <Contact />
+      <Footer />
     </>
   );
 }

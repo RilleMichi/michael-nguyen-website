@@ -44,7 +44,7 @@ export const Contact = () => {
     }
 
     return (
-        <div className="contact">
+        <div id="contact" className="contact">
             <div className="text-center">
                 <h1>Contact Me</h1>
                 <p>Please fill out the form and describe you project needs and I'll contact you as soon as possible</p>

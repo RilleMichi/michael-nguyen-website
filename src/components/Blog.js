@@ -109,12 +109,15 @@ const Blog = () => {
     }
     // Wird unten aufgerufen um die popupbox zu zeigen, damit kan man die Einstellungen für den Popup vornehmen
     const popupBoxConfig = {
+        titleBar: {
+            enable: true,
+          },
         fadeIn: true,
         fadeInSpeed: 500
     }
 
     return (
-        <div className="blog-wrapper">
+        <div id="blog" className="blog-wrapper">
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">blog</h1>
                 <div className="image-box-wrapper row justify-content-center">

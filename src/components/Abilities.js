@@ -7,7 +7,7 @@ import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 
 const Abilities = () => {
     return (
-        <div className="abilities section">
+        <div id="abilities" className="abilities section">
             <h1 className="abilities">Abilities</h1>
 
             <div className="abilities-center container">
@@ -73,22 +73,12 @@ const Abilities = () => {
                     <div className="col-md-6">
                         <ul className="no-bullets" >
                             <li className="abilities-line">
-                                <span className="ability-title"><FontAwesomeIcon className="ability-title-icon" icon={faPython} />Python</span>
-                                <span className="ability-score">
-                                    <FontAwesomeIcon className="icon" icon={faStar} />
-                                    <FontAwesomeIcon className="icon" icon={faStar} />
-                                    <FontAwesomeIcon className="icon" icon={faStar} />
-                                    <FontAwesomeIcon className="icon" icon={farStar} />
-                                    <FontAwesomeIcon className="icon" icon={farStar} />
-                                </span>
-                            </li>
-                            <li className="abilities-line">
                                 <span className="ability-title"><FontAwesomeIcon className="ability-title-icon" icon={faWindows} />PowerShell</span>
                                 <span className="ability-score">
                                     <FontAwesomeIcon className="icon" icon={faStar} />
                                     <FontAwesomeIcon className="icon" icon={faStar} />
                                     <FontAwesomeIcon className="icon" icon={faStar} />
-                                    <FontAwesomeIcon className="icon" icon={farStar} />
+                                    <FontAwesomeIcon className="icon" icon={faStar} />
                                     <FontAwesomeIcon className="icon" icon={farStar} />
                                 </span>
                             </li>
@@ -118,6 +108,16 @@ const Abilities = () => {
                                     <FontAwesomeIcon className="icon" icon={faStar} />
                                     <FontAwesomeIcon className="icon" icon={faStar} />
                                     <FontAwesomeIcon className="icon" icon={faStar} />
+                                    <FontAwesomeIcon className="icon" icon={farStar} />
+                                    <FontAwesomeIcon className="icon" icon={farStar} />
+                                </span>
+                            </li>
+                            <li className="abilities-line">
+                                <span className="ability-title"><FontAwesomeIcon className="ability-title-icon" icon={faPython} />Python</span>
+                                <span className="ability-score">
+                                    <FontAwesomeIcon className="icon" icon={faStar} />
+                                    <FontAwesomeIcon className="icon" icon={faStar} />
+                                    <FontAwesomeIcon className="icon" icon={farStar} />
                                     <FontAwesomeIcon className="icon" icon={farStar} />
                                     <FontAwesomeIcon className="icon" icon={farStar} />
                                 </span>
@@ -169,7 +169,7 @@ const Abilities = () => {
                                 <span className="ability-score">
                                     <FontAwesomeIcon className="icon" icon={faStar} />
                                     <FontAwesomeIcon className="icon" icon={faStar} />
-                                    <FontAwesomeIcon className="icon" icon={faStar} />
+                                    <FontAwesomeIcon className="icon" icon={farStar} />
                                     <FontAwesomeIcon className="icon" icon={farStar} />
                                     <FontAwesomeIcon className="icon" icon={farStar} />
                                 </span>
